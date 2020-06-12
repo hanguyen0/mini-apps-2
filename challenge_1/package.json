@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack -d --watch",
+    "start": "json-server --watch data/db.json"
   },
   "keywords": [],
   "author": "hanguyen",
@@ -20,6 +21,10 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.10.1"
+    "@babel/polyfill": "^7.10.1",
+    "axios": "^0.19.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-paginate": "^6.3.2"
   }
 }
